@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/cjk-zh.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entity Register</title>
+</head>
+
+<body>
+    <main>
+        <h1>Register an entity in Shiyun Works</h1>
+
+        <p>Fill out the form below to register an entity in Shiyun Works</p>
+
+        <form name="entity-reg" method="POST" data-netlify="true">
+            <p>
+                <label>Name of the entity (in Language 1)<input type="text" name="name-1" required /></label>
+            </p>
+            <p>
+                <label>Language 1<select name="lang-1[]" required>
+                        <option value="CJK">Chinese, Japanese or Korean</option>
+                        <option value="western">English, French or German</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>Name of the entity (in Language 2)<input type="text" name="name-2" required /></label>
+            </p>
+            <p>
+                <label>Language 2<select name="lang-2[]" required>
+                    <option value="western">English, French or German</option>
+                        <option value="CJK">Chinese, Japanese or Korean</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>Warp domain of the entity (e.g. org.lorem-ipsum)<input type="text" name="warp" required /></label>
+            </p>
+            <p>
+                <label>Representative's Minecraft username<input type="text" name="mcusername" required /></label>
+            <p>
+            <p>
+                <label>Location (region code) (e.g. 03 for Wuzhou)<input type="text" name="location" required></textarea></label>
+            </p>
+            <p>
+                <label>Type<select name="type[]" required>
+                        <option value="com">COM</option>
+                        <option value="ltd">LTD</option>
+                        <option value="org">ORG</option>
+                        <option value="med">MED</option>
+                        <option value="edu">EDU</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>Notes<textarea name="notes"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>eForm: Register an entity in Shiyun Works - English (Ver 1.0)</p>
+        <p>Copyright © 2014 - 2023 metaShiyun</p>
+    </footer>
+</body>
+
+</html>
