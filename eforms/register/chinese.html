@@ -20,28 +20,28 @@
 
         <form name="register" method="POST" data-netlify="true">
             <p>
-                <label>如何称呼您？<input type="text" name="nickname" /></label>
+                <label>如何称呼您？<input type="text" name="nickname" required /></label>
             </p>
             <p>
-                <label>电子邮箱地址<input type="email" name="email" /></label>
+                <label>电子邮箱地址<input type="email" name="email" required /></label>
             </p>
             <p>
-                <label>《我的世界》用户名<input type="text" name="mcusername" /></label>
+                <label>《我的世界》用户名<input type="text" name="mcusername" required /></label>
             </p>
             <p>
-                <label>您是否有《我的世界：Java 版》的授权？<select name="license[]">
+                <label>您是否有《我的世界：Java 版》的授权？<select name="license[]" required>
                         <option value="yes">是的</option>
                         <option value="no">不是</option>
                     </select></label>
             </p>
             <p>
-                <label>您申请加入哪个服务器？<select name="server[]">
+                <label>您申请加入哪个服务器？<select name="server[]" required >
                         <option value="work">红石云工场</option>
                         <option value="verse1a">石云宇宙 1-A</option>
                     </select></label>
             </p>
             <p>
-                <label>您从哪里了解到我们？<select name="hearabout[]">
+                <label>您从哪里了解到我们？<select name="hearabout[]" required >
                         <option value="website">我们的网站</option>
                         <option value="friend">朋友推荐</option>
                         <option value="bilibili">哔哩哔哩动画</option>
@@ -49,10 +49,10 @@
                     </select></label>
             </p>
             <p>
-                <label>邀请人的《我的世界》用户名<input type="text" name="inviter" /></label>
+                <label>(可选) 邀请人的《我的世界》用户名<input type="text" name="inviter" /></label>
             </p>
             <p>
-                <label>其他备注（比如您还可以放上您的个人网站地址、作品集、简历、GitHub 资料页等。）<textarea name="message"></textarea></label>
+                <label>(可选) 其他备注（比如您还可以放上您的个人网站地址、作品集、简历、GitHub 资料页等。）<textarea name="message"></textarea></label>
             </p>
             <p>
                 <button type="submit">提交</button>

@@ -13,34 +13,34 @@
     <main>
         <h1>Register a metaShiyun account</h1>
 
-        <p>Other languages: <a href="./chinese.html">中文</a> <a href="./japanese.html">日本語</a></p>
+        <p>Other languages: <a href="./chinese.html">简体中文</a> <a href="./japanese.html">日本語</a></p>
 
         <p>Fill out the form below to register a metaShiyun account.</p>
 
         <form name="register" method="POST" data-netlify="true">
             <p>
-                <label>Nickname<input type="text" name="nickname" /></label>
+                <label>Nickname<input type="text" name="nickname" required /></label>
             </p>
             <p>
-                <label>Email<input type="email" name="email" /></label>
+                <label>Email<input type="email" name="email" required /></label>
             </p>
             <p>
-                <label>Minecraft username<input type="text" name="mcusername" /></label>
+                <label>Minecraft username<input type="text" name="mcusername" required /></label>
             </p>
             <p>
-                <label>Do you have Minecraft: Java Edition?<select name="license[]">
+                <label>Do you have Minecraft: Java Edition?<select name="license[]" required>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select></label>
             </p>
             <p>
-                <label>Server to join<select name="server[]">
+                <label>Server to join<select name="server[]" required>
                         <option value="work">Shiyun Works</option>
                         <option value="verse1a">ShiyunVerse 1-A</option>
                     </select></label>
             </p>
             <p>
-                <label>How did you hear about us?<select name="hearabout[]">
+                <label>How did you hear about us?<select name="hearabout[]" required>
                         <option value="website">Website</option>
                         <option value="friend">Friend</option>
                         <option value="bilibili">Bilibili</option>
@@ -48,10 +48,10 @@
                     </select></label>
             </p>
             <p>
-                <label>Inviter's Minecraft username<input type="text" name="inviter" /></label>
+                <label>(optional) Inviter's Minecraft username<input type="text" name="inviter" /></label>
             </p>
             <p>
-                <label>Other notes (e.g. you can also put your website, portfolio, resume, GitHub profile, etc.)<textarea name="message"></textarea></label>
+                <label>(optional) Other notes (e.g. you can also put your website, portfolio, resume, GitHub profile, etc.)<textarea name="message"></textarea></label>
             </p>
             <p>
                 <button type="submit">Submit</button>
