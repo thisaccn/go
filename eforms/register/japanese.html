@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+        body {
+            font-family: sans-serif;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0.5rem;
+        }
+
+        label {
+            display: block;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border: 0;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        a {
+            color: #333;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登録</title>
+</head>
+
+<body>
+    <main>
+        <h1>metaShiyun アカウント登録</h1>
+
+        <p>他の言語：<a href="./index.html">English</a> <a href="./chinese.html">中文</a></p>
+
+        <p>metaShiyun アカウントを登録するには、以下のフォームに記入してください。</p>
+
+        <form name="register" method="POST" data-netlify="true">
+            <p>
+                <label>ニックネーム<input type="text" name="nickname" /></label>
+            </p>
+            <p>
+                <label>Eメール<input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Minecraft ユーザー名<input type="text" name="mcusername" /></label>
+            </p>
+            <p>
+                <label>Minecraft: Java Edition を持っていますか？<select name="license[]">
+                        <option value="yes">はい</option>
+                        <option value="no">いいえ</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>参加するサーバー<select name="server[]">
+                        <option value="work">Shiyun Works</option>
+                        <option value="verse1a">ShiyunVerse 1-A</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>どのように私たちを知りましたか？<select name="hearabout[]">
+                        <option value="website">metaShiyunのホームページ</option>
+                        <option value="friend">友達</option>
+                        <option value="bilibili">ビリビリ動画</option>
+                        <option value="other">その他</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>招待者の Minecraft ユーザー名<input type="text" name="inviter" /></label>
+            </p>
+            <p>
+                <label>その他の注意事項（例：個人ホームページ、ポートフォリオ、履歴書、GitHubページなどを記載することもできます。）<textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">送信</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>eForm: Register a metaShiyun account - Japanese (Ver 2.0)</p>
+        <p>Copyright © 2014 - 2023 metaShiyun</p>
+    </footer>
+</body>
+
+</html>

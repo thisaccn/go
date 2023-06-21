@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+        body {
+            font-family: sans-serif;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0.5rem;
+        }
+
+        label {
+            display: block;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border: 0;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        a {
+            color: #333;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+</head>
+
+<body>
+    <main>
+        <h1>元石云账户注册申请</h1>
+
+        <p>其他语言：<a href="./index.html">English</a> <a href="./japanese.html">日本語</a></p>
+
+        <p>申请注册元石云账户，请您填写以下表格。</p>
+
+        <form name="register" method="POST" data-netlify="true">
+            <p>
+                <label>如何称呼您？<input type="text" name="nickname" /></label>
+            </p>
+            <p>
+                <label>电子邮箱地址<input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>《我的世界》用户名<input type="text" name="mcusername" /></label>
+            </p>
+            <p>
+                <label>您是否有《我的世界：Java 版》的授权？<select name="license[]">
+                        <option value="yes">是的</option>
+                        <option value="no">不是</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>您申请加入哪个服务器？<select name="server[]">
+                        <option value="work">红石云工场</option>
+                        <option value="verse1a">石云宇宙 1-A</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>您从哪里了解到我们？<select name="hearabout[]">
+                        <option value="website">我们的网站</option>
+                        <option value="friend">朋友推荐</option>
+                        <option value="bilibili">哔哩哔哩动画</option>
+                        <option value="other">其他</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>邀请人的 Minecraft 用户名<input type="text" name="inviter" /></label>
+            </p>
+            <p>
+                <label>其他备注（比如您还可以放上您的个人网站地址、作品集、简历、GitHub 资料页等。）<textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">提交</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>eForm: Register a metaShiyun account - Chinese (Ver 2.0)</p>
+        <p>Copyright © 2014 - 2023 metaShiyun</p>
+    </footer>
+</body>
+
+</html>

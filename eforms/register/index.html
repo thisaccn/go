@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+        body {
+            font-family: sans-serif;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0.5rem;
+        }
+
+        label {
+            display: block;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border: 0;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        a {
+            color: #333;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+
+<body>
+    <main>
+        <h1>Register a metaShiyun account</h1>
+
+        <p>Other languages: <a href="./chinese.html">中文</a> <a href="./japanese.html">日本語</a></p>
+
+        <p>Fill out the form below to register a metaShiyun account.</p>
+
+        <form name="register" method="POST" data-netlify="true">
+            <p>
+                <label>Nickname<input type="text" name="nickname" /></label>
+            </p>
+            <p>
+                <label>Email<input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Minecraft username<input type="text" name="mcusername" /></label>
+            </p>
+            <p>
+                <label>Do you have Minecraft: Java Edition?<select name="license[]">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>Server to join<select name="server[]">
+                        <option value="work">Shiyun Works</option>
+                        <option value="verse1a">ShiyunVerse 1-A</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>How did you hear about us?<select name="hearabout[]">
+                        <option value="website">Website</option>
+                        <option value="friend">Friend</option>
+                        <option value="bilibili">Bilibili</option>
+                        <option value="other">Other</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>Inviter's Minecraft username<input type="text" name="inviter" /></label>
+            </p>
+            <p>
+                <label>Other notes (e.g. you can also put your website, portfolio, resume, GitHub profile, etc.)<textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>eForm: Register a metaShiyun account - English (Ver 2.0)</p>
+        <p>Copyright © 2014 - 2023 metaShiyun</p>
+    </footer>
+</body>
+
+</html>
