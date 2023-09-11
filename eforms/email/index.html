@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/cjk-zh.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申请Email邮箱</title>
+</head>
+
+<body>
+    <main>
+        <h1>申请Email邮箱</h1>
+
+        <p>申请元石云Email邮箱，请您填写以下表格。</p>
+        <b>注意：只有管理员能申请元石云Email邮箱。</b>
+
+        <form name="email" method="POST" data-netlify="true">
+            <p>
+                <label>Minecraft 用户名<input type="text" name="mcusername" required /></label>
+            </p>
+            <p>
+                <label>拟注册邮箱地址
+                    <div style="display: flex;">
+                        <input type="text" name="address" required />
+                        <select name="domain[]" required>
+                            <option value="shiyun-org">@shiyun.org</option>
+                            <option value="shiyun-work">@shiyun.work (2023年12月10日起停用)</option>
+                        </select>
+                    </div>
+                </label>
+            </p>
+            <p>
+                <label>个人Email邮箱地址<input type="text" name="email" required /></label>
+            </p>
+            <p>
+                <label>其他备注<textarea name="notes"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">提交</button>
+            </p>
+        </form>
+
+        <p>提示：元石云Email邮箱是一个邮件转发服务。接收到的邮件会被转发到你的个人邮箱，发送邮件需要您使用其他电子邮件服务（例如Outlook）并设置元石云Email邮箱地址为发信地址进行。</p>
+    </main>
+
+    <footer>
+        <p>eForm: 申请Email邮箱 - Chinese (Ver 1.0)</p>
+        <p>Copyright © 2014 - 2023 metaShiyun</p>
+    </footer>
+</body>
+
+</html>
