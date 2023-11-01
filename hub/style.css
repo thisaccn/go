@@ -1,0 +1,87 @@
+.footer {
+    text-align: left;
+}
+
+.footer-left {
+    float: left;
+    width: 30%;
+}
+
+.footer-center {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.footer-right {
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid white;
+    background-color: indianred;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+
+.announcement-date {
+    font-style: italic;
+}
+
+.rules {
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.announcement {
+    padding: 10px;
+    background-color: lightblue;
+}
+
+.line {
+    margin-bottom: 50px;
+}
+
+.navi {
+    text-align: center;
+}
+
+.navi-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navi-list li {
+    display: inline;
+}
+
+.navi-list li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.navi-list li a:hover {
+    background-color: indianred;
+    color: white;
+}
+
+.hlink {
+    color: black;
+}
+
+.hlink:hover {
+    color: indianred;
+}
