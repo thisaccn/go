@@ -68,3 +68,7 @@ th, td {
 .hlink:hover {
     color: indianred;
 }
+
+hr {
+    border: 0.5px solid black;
+}
