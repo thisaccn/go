@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../../css/cjk-zh.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
+
+    <script>
+        var d = new Date();
+        var y = d.getFullYear();
+        document.getElementById("year").innerHTML = y;
+    </script>
 </head>
 
 <body>
@@ -62,7 +68,7 @@
 
     <footer>
         <p>eForm: Register a metaShiyun account - Chinese (Ver 2.0)</p>
-        <p>Copyright © 2014 - 2023 metaShiyun</p>
+        <p>Copyright &copy; 2014 - <span id="year">2023</span> metaShiyun</p>
     </footer>
 </body>
 

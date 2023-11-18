@@ -139,3 +139,39 @@ footer {
         margin: 10px 0;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body, section, .info-block, footer {
+        background-color: #121212; /* Dark background */
+        color: #ffffff; /* Light text */
+    }
+
+    a, .homepage-nav a {
+        color: #ffffff; /* Light text links */
+    }
+
+    a:hover {
+        color: #4caf50; /* Light green on hover */
+    }
+
+    .homepage-nav a {
+        background-color: #333333; /* Darker buttons */
+    }
+
+    .homepage-nav a:hover {
+        background-color: #555555; /* Even darker on hover */
+    }
+
+    header {
+        background-color: #1e1e1e; /* Dark header */
+        border-radius: 8px; /* Rounded corners */
+    }
+
+    .table th {
+        background-color: #333333; /* Dark table headers */
+    }
+
+    .table td, .table th {
+        border: 1px solid #444444; /* Darker borders for table cells */
+    }
+}

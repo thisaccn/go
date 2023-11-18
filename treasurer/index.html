@@ -8,6 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>元石雲司庫</title>
 
+<script>
+    var d = new Date();
+    var y = d.getFullYear();
+    document.getElementById("year").innerHTML = y;
+</script>
+
 <style>
     .footer {
         text-align: center;
@@ -23,13 +29,99 @@
         border: 1px solid #ff0000;
         padding: 8px;
     }
+
+    @media (prefers-color-scheme: dark) {
+        .logo-light {
+            display: none;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            color: #ff0000;
+        }
+
+        table {
+            border: 1px solid #ff0000;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        .logo-dark {
+            display: none;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        a {
+            color: #ff0000;
+        }
+
+        table {
+            border: 1px solid #ff0000;
+        }
+    }
+
+    /* Mobile devices */
+    @media (max-width: 480px) {
+        main {
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        .footer img {
+            height: 30px;
+        }
+    }
+
+    /* Tablet devices */
+    @media (max-width: 768px) {
+        main {
+            padding: 1.5rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        .footer img {
+            height: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
 </style>
 
 </head>
 
 <body>
     <div style="text-align: center;">
-        <img height="100" src="./images/metashiyun-new.png" alt="metaShiyun" />
+        <img class="logo-light" height="100" src="./images/metashiyun-new.png" alt="metaShiyun" />
+        <img class="logo-dark" style="margin-top: 25px;" src="./images/seal.png" height="100" alt="Seal of Treasurer of metaShiyun 元石雲司庫" />
         <h1>Treasurer of metaShiyun</h1>
     </div>
     <hr />
@@ -151,9 +243,9 @@
     </table>
     <hr />
     <div class="footer">
-        <img src="./images/seal.png" height="45" alt="Seal of Treasurer of metaShiyun 元石雲司庫" />
+        <img class="logo-light" src="./images/seal.png" height="45" alt="Seal of Treasurer of metaShiyun 元石雲司庫" />
         <p>Treasurer of metaShiyun | Version: 1.1 | Updated: Oct. 27, 2023 </p>
-        <p>© 2014 - 2023 metaShiyun</p>
+        <p>&copy; 2014 - <span id="year">2023</span> metaShiyun</p>
     </div>
 </body>
 </html>

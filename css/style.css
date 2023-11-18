@@ -56,3 +56,38 @@ a:hover {
     color: #666;
 }
 
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212; /* Dark background */
+        color: #ffffff; /* Light text */
+    }
+
+    main {
+        background-color: #121212; /* Darker main background */
+    }
+
+    input, textarea, select {
+        background-color: #333; /* Darker input fields */
+        color: #ffffff; /* Light text in input fields */
+        border-color: #444; /* Darker border */
+    }
+
+    button {
+        background-color: #555; /* Darker button background */
+        color: #fff; /* Light button text */
+    }
+
+    footer {
+        background-color: #121212; /* Dark footer background */
+        color: #ffffff; /* Light footer text */
+    }
+
+    a {
+        color: #ddd; /* Lighter link color */
+    }
+
+    a:hover {
+        color: #ffffff; /* Lighter hover color */
+    }
+}
