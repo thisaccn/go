@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/cjk-zh.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+    <title>Register a metaShiyun account</title>
 
     <script>
         var d = new Date();
@@ -20,45 +21,48 @@
     <main>
         <h1>Register a metaShiyun account</h1>
 
-        <p>Other languages: <a href="./chinese.html">简体中文</a> <a href="./japanese.html">日本語</a></p>
+        <p>The form is also provided in PDF (Simplified Chinese only): <a href="https://static.shiyun.org/metaShiyun-Form-1-register-3.0-zh-CN-fillable.pdf">PDF Version</a></p>
 
-        <p>Fill out the form below to register a metaShiyun account.</p>
+        <p>Other languages: <a href="./zh-CN.html">简体中文</a> <a href="./zh-TW.html">正體中文</a></p>
+
+        <p>To register a metaShiyun account, please fill out the form.</p>
 
         <form name="register" method="POST" data-netlify="true">
             <p>
                 <label>Nickname<input type="text" name="nickname" required /></label>
             </p>
             <p>
-                <label>Email<input type="email" name="email" required /></label>
+                <label>Email address<input type="email" name="email" required /></label>
             </p>
             <p>
-                <label>Minecraft username<input type="text" name="mcusername" required /></label>
+                <label>Minecraft username<input type="text" name="mc-username" required /></label>
             </p>
             <p>
-                <label>Do you have Minecraft: Java Edition?<select name="license[]" required>
+                <label>Do you have a license of Minecraft: Java Edition?<select name="license[]" required>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select></label>
             </p>
             <p>
-                <label>Server to join<select name="server[]" required>
+                <label>Which server do you want to join?<select name="server[]" required >
                         <option value="work">Shiyun Works</option>
                         <option value="verse1a">ShiyunVerse 1-A</option>
                     </select></label>
             </p>
             <p>
-                <label>How did you hear about us?<select name="hearabout[]" required>
+                <label>How did you hear about us?<select name="hearabout[]" required >
                         <option value="website">Website</option>
                         <option value="friend">Friend</option>
                         <option value="bilibili">Bilibili</option>
-                        <option value="other">Other</option>
+                        <option value="github">GitHub</option>
+                        <option value="other">Others</option>
                     </select></label>
             </p>
             <p>
-                <label>(optional) Inviter's Minecraft username<input type="text" name="inviter" /></label>
+                <label>(Optional) Who invited you to join metaShiyun?<input type="text" name="refer" /></label>
             </p>
             <p>
-                <label>(optional) Other notes (e.g. you can also put your website, portfolio, resume, GitHub profile, etc.)<textarea name="message"></textarea></label>
+                <label>(Optional) Other messages<textarea name="message"></textarea></label>
             </p>
             <p>
                 <button type="submit">Submit</button>
@@ -67,8 +71,8 @@
     </main>
 
     <footer>
-        <p>eForm: Register a metaShiyun account - English (Ver 2.0)</p>
-        <p>Copyright &copy; 2014 - <span id="year">2023</span> metaShiyun</p>
+        <p>eForm: Register a metaShiyun account (Ver 3.0 / English)</p>
+        <p>Copyright &copy; 2014 - <span id="year">2024</span> metaShiyun</p>
     </footer>
 </body>
 

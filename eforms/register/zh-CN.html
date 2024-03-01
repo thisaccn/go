@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/cjk-zh.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>注册</title>
+    <title>元石云账户注册申请</title>
 
     <script>
         var d = new Date();
@@ -21,24 +21,26 @@
     <main>
         <h1>元石云账户注册申请</h1>
 
-        <p>其他语言：<a href="./index.html">English</a> <a href="./japanese.html">日本語</a></p>
+        <p>本表格还以PDF形式提供：<a href="https://static.shiyun.org/metaShiyun-Form-1-register-3.0-zh-CN-fillable.pdf">PDF版本</a></p>
+
+        <p>其他语言：<a href="./index.html">English</a> <a href="./zh-TW.html">繁體字</a></p>
 
         <p>申请注册元石云账户，请您填写以下表格。</p>
 
         <form name="register" method="POST" data-netlify="true">
             <p>
-                <label>如何称呼您？<input type="text" name="nickname" required /></label>
+                <label>称呼<input type="text" name="nickname" required /></label>
             </p>
             <p>
-                <label>电子邮箱地址<input type="email" name="email" required /></label>
+                <label>电子邮件地址<input type="email" name="email" required /></label>
             </p>
             <p>
-                <label>《我的世界》用户名<input type="text" name="mcusername" required /></label>
+                <label>《我的世界》用户名<input type="text" name="mc-username" required /></label>
             </p>
             <p>
                 <label>您是否有《我的世界：Java 版》的授权？<select name="license[]" required>
-                        <option value="yes">是的</option>
-                        <option value="no">不是</option>
+                        <option value="yes">是</option>
+                        <option value="no">否</option>
                     </select></label>
             </p>
             <p>
@@ -48,18 +50,19 @@
                     </select></label>
             </p>
             <p>
-                <label>您从哪里了解到我们？<select name="hearabout[]" required >
-                        <option value="website">我们的网站</option>
-                        <option value="friend">朋友推荐</option>
+                <label>您是从何处了解到我们？<select name="hearabout[]" required >
+                        <option value="website">网站</option>
+                        <option value="friend">朋友邀请</option>
                         <option value="bilibili">哔哩哔哩动画</option>
-                        <option value="other">其他</option>
+                        <option value="github">GitHub</option>
+                        <option value="other">其他途径</option>
                     </select></label>
             </p>
             <p>
-                <label>(可选) 邀请人的《我的世界》用户名<input type="text" name="inviter" /></label>
+                <label>(可选) 邀请人<input type="text" name="refer" /></label>
             </p>
             <p>
-                <label>(可选) 其他备注（比如您还可以放上您的个人网站地址、作品集、简历、GitHub 资料页等。）<textarea name="message"></textarea></label>
+                <label>(可选) 其他说明<textarea name="message"></textarea></label>
             </p>
             <p>
                 <button type="submit">提交</button>
@@ -68,8 +71,8 @@
     </main>
 
     <footer>
-        <p>eForm: Register a metaShiyun account - Chinese (Ver 2.0)</p>
-        <p>Copyright &copy; 2014 - <span id="year">2023</span> metaShiyun</p>
+        <p>eForm: Register a metaShiyun account (Ver 3.0 / Simplified Chinese)</p>
+        <p>Copyright &copy; 2014 - <span id="year">2024</span> metaShiyun</p>
     </footer>
 </body>
 

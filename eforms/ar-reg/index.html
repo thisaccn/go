@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -23,41 +23,43 @@
 
         <p>登记新的玩家村落，请您填写以下表格。</p>
 
-        <form name="ar-reg" method="POST" data-netlify="true">
+        <form name="ar-reg-v2" method="POST" data-netlify="true">
             <p>
-                <label>玩家村落名（汉字、假名或谚文）<input type="text" name="name" required /></label>
+                <label>玩家村落名（汉字或假名）<input type="text" name="name" required /></label>
             </p>
             <p>
-                <label>玩家村落名（拉丁）<input type="text" name="latin-name" required /></label>
+                <label>玩家村落名（拉丁字母）<input type="text" name="name-latin" required /></label>
             </p>
             <p>
-                <label>玩家村落简称（两个英文字母）<input type="text" name="code" required /></label>
+                <label>玩家村落简称（两个英文拉丁字母）<input type="text" name="region-code" required /></label>
             </p>
             <p>
-                <label>玩家村落简称（一个汉字）<input type="text" name="code-han" required /></label>
+                <label>玩家村落简称（一个中文汉字）<input type="text" name="zh-abbreviation" required /></label>
             </p>
             <p>
-                <label>代表人 Minecraft 用户名<input type="text" name="mcusername" required /></label>
+                <label>代表人 Minecraft 用户名<input type="text" name="rep-mc-username" required /></label>
             </p>
             <p>
-                <label>注册玩家村落种类<select name="type[]" required>
+                <label>注册玩家村落种类
+                    <select name="type[]" required>
                         <option value="normal">普通</option>
-                        <option value="full">指定</option>
-                    </select></label>
+                        <option value="full">其他</option>
+                    </select>
+                </label>
             </p>
             <p>
-                <label>玩家村落位于<select name="location[]" required >
-                        <option value="unknown">我不知道</option>
-                        <option value="capital">京畿地区</option>
-                        <option value="western">西部地区</option>
-                        <option value="southwestern">西南地区</option>
-                        <option value="northwestern">西北地区</option>
-                        <option value="donghai">东海地区</option>
-                        <option value="northeastern">东北地区</option>
-                        <option value="northern">北部地区</option>
-                        <option value="midsouthern">中南地区</option>
-                        <option value="fozhou">佛州地区</option>
-                        <option value="others">其他未探明地区</option>
+                <label>玩家村落大致位于<select name="location[]" required>
+                        <option value="unknown">我不知道这个位置的归属</option>
+                        <option value="capital">京畿地方</option>
+                        <option value="western">西部地方</option>
+                        <option value="southwestern">西南地方</option>
+                        <option value="northwestern">西北地方</option>
+                        <option value="donghai">东海地方</option>
+                        <option value="northeastern">东北地方</option>
+                        <option value="northern">北部地方</option>
+                        <option value="midsouthern">中南地方</option>
+                        <option value="fozhou">佛州地方</option>
+                        <option value="others">其他未探明区域</option>
                     </select></label>
             </p>
             <p>
@@ -67,7 +69,7 @@
                 <label>玩家村落介绍段落（用于文档）<textarea name="description" required></textarea></label>
             </p>
             <p>
-                <label>预计发展方向（建筑风格、大致规划等）<textarea name="future" required></textarea></label>
+                <label>预计发展方向（建筑风格、大致规划等）<textarea name="plan" required></textarea></label>
             </p>
             <p>
                 <label>其他备注<textarea name="notes"></textarea></label>
@@ -79,8 +81,8 @@
     </main>
 
     <footer>
-        <p>eForm: 玩家村落登记 - Chinese (Ver 1.0)</p>
-        <p>Copyright &copy; 2014 - <span id="year">2023</span> metaShiyun</p>
+        <p>eForm: 玩家村落登记 (Ver 2.0 / zh-Hans-CN)</p>
+        <p>Copyright &copy; 2014 - <span id="year">2024</span> metaShiyun</p>
     </footer>
 </body>
 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/cjk-zh.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>元石雲賬戶註冊申請</title>
+
+    <script>
+        var d = new Date();
+        var y = d.getFullYear();
+        document.getElementById("year").innerHTML = y;
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>元石雲賬戶註冊申請</h1>
+
+        <p>本申請表還以PDF形式提供（僅有簡體中文版本）：<a href="https://static.shiyun.org/metaShiyun-Form-1-register-3.0-zh-CN-fillable.pdf">PDF版本</a></p>
+
+        <p>其他語言<a href="./index.html">English</a> <a href="./zh-CN.html">简体字</a></p>
+
+        <p>申請註冊元石雲賬戶，請您填寫此申請表。</p>
+
+        <form name="register" method="POST" data-netlify="true">
+            <p>
+                <label>稱呼<input type="text" name="nickname" required /></label>
+            </p>
+            <p>
+                <label>電郵<input type="email" name="email" required /></label>
+            </p>
+            <p>
+                <label>Minecraft 用戶名<input type="text" name="mc-username" required /></label>
+            </p>
+            <p>
+                <label>您是否有 Minecraft: Java Edition 之正版授權？<select name="license[]" required>
+                        <option value="yes">是</option>
+                        <option value="no">否</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>您申請加入的伺服器為？<select name="server[]" required >
+                        <option value="work">紅石雲工場</option>
+                        <option value="verse1a">石雲宇宙 1-A</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>您從何處瞭解到我們？<select name="hearabout[]" required >
+                        <option value="website">網路</option>
+                        <option value="friend">朋友邀請</option>
+                        <option value="bilibili">嗶哩嗶哩動畫</option>
+                        <option value="github">GitHub</option>
+                        <option value="other">其他</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>(可選) 邀請人<input type="text" name="refer" /></label>
+            </p>
+            <p>
+                <label>(可選) 其他說明<textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">提交</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>eForm: Register a metaShiyun account (Ver 3.0 / Traditional Chinese)</p>
+        <p>Copyright &copy; 2014 - <span id="year">2024</span> metaShiyun</p>
+    </footer>
+</body>
+
+</html>
